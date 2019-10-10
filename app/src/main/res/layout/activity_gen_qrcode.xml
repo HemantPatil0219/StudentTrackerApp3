@@ -5,35 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".gen_qrcode">
     <Toolbar
         android:id="@+id/toolbar"
         android:layout_width="415dp"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:title="CHOOSE"
-
+        android:title="Welcome!"
         tools:targetApi="lollipop" />
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Generate Qr Code"
+        android:background="@drawable/button_rounded"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
 
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="Faculty"
-        android:textSize="20dp"
-        android:background="@drawable/button_rounded"
-        android:layout_marginTop="200dp"
-        android:onClick="btn_faculty"
-        android:layout_gravity="center"/>
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="Student"
-        android:textSize="20dp"
-        android:background="@drawable/button_rounded"
-        android:layout_marginTop="15dp"
-        android:onClick="btn_student"
-        android:layout_gravity="center"/>
 
 
 </LinearLayout>

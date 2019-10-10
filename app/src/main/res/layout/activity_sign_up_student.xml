@@ -6,25 +6,37 @@
     android:layout_height="match_parent"
     android:background="@color/cardview_light_background"
     android:orientation="vertical"
-    android:padding="25dp"
+
 
     tools:context=".Sign_up_student">
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:title="Signup form"
+
+        tools:targetApi="lollipop" />
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="50dp"
         >
     </com.google.android.material.textfield.TextInputLayout>
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:hint="Full Name"
+        android:hint="Enrollment no."
         android:ems="10"
         android:inputType="text"
         android:textSize="20sp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        >
 
     </EditText>
     <com.google.android.material.textfield.TextInputLayout
@@ -36,13 +48,34 @@
         >
     </com.google.android.material.textfield.TextInputLayout>
     <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+    </EditText>
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email id"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorAccent"
+        >
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textSize="20sp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
 
     </EditText>
     <com.google.android.material.textfield.TextInputLayout
@@ -55,13 +88,14 @@
         >
     </com.google.android.material.textfield.TextInputLayout>
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="Password"
         android:ems="10"
         android:inputType="textPassword"
         android:textSize="20sp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
 
     </EditText>
     <com.google.android.material.textfield.TextInputLayout
@@ -74,38 +108,80 @@
         >
     </com.google.android.material.textfield.TextInputLayout>
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="Confirm Password"
         android:ems="10"
         android:inputType="textPassword"
         android:textSize="20sp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
 
     </EditText>
-<RadioGroup
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
-    android:orientation="horizontal"
-   />
-    <TextView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="Gender"
-        android:textSize="20sp"/>
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch"
+            android:textSize="20dp"
+            android:layout_marginLeft="36dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CSE"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ME"/>
 
-    <RadioButton
-        android:layout_width="wrap_content"
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EC"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IT"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="male"
-        android:textSize="20sp"/>
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Female"
-        android:textSize="20sp"/>
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:textSize="20dp"
+            android:layout_marginLeft="36dp"/>
 
-
-
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1st"
+            android:layout_marginLeft="5dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2nd"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3rd"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4t"/>
+    </LinearLayout>
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:text="SIGN UP"
+            android:textSize="20dp"
+            android:textColor="#ffff"
+            android:background="@drawable/button_rounded"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
 </LinearLayout>

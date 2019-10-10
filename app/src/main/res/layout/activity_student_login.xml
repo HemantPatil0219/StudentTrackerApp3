@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="@color/background"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:title="Login"
+        android:title="Login form"
         tools:targetApi="lollipop" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -28,13 +28,14 @@
         >
     </com.google.android.material.textfield.TextInputLayout>
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="Enrollment no."
         android:ems="10"
         android:inputType="number"
         android:textSize="20sp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
 
     </EditText>
     <com.google.android.material.textfield.TextInputLayout
@@ -48,30 +49,34 @@
         >
     </com.google.android.material.textfield.TextInputLayout>
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="Password"
         android:ems="10"
         android:inputType="textPassword"
         android:textSize="20sp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
 
     </EditText>
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="50dp"
         android:text="Login"
         android:textSize="20dp"
         android:textColor="#ffff"
         android:background="@drawable/button_rounded"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="50dp"
         android:text="want to Register? click here"
         android:textSize="20dp"
         android:textColor="#ffff"
         android:background="@drawable/button_rounded"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:onClick="btn_student_signup"/>
 
 </LinearLayout>
