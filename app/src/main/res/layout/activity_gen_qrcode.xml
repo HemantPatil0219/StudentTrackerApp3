@@ -14,15 +14,32 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:title="Welcome!"
         tools:targetApi="lollipop" />
+   <EditText
+       android:id="@+id/input_enroll"
+       android:layout_width="350dp"
+       android:layout_height="40dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="10dp"
+       android:hint="Enter your Enrollment number "
+       />
+    <ImageView
+        android:id="@+id/qrimage"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
     <Button
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:id="@+id/gen_qr"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
         android:text="Generate Qr Code"
-        android:background="@drawable/button_rounded"
-        android:textColor="#ffff"
         android:textSize="20dp"
+        android:textColor="#ffff"
+        android:background="@drawable/button_rounded"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:onClick="btn_gen_qr"
+        />
 
 
 

@@ -117,6 +117,25 @@
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
             />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorAccent"
+
+        >
+    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="enter subject"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
 
 
 

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_main"
+    android:orientation="vertical">
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:title="Admin Homepage"
+        tools:targetApi="lollipop" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="Add Faculty"
+        android:textSize="20dp"
+        android:background="@drawable/button_rounded"
+        android:layout_marginTop="50dp"
+        android:onClick="btn_add_faculty"
+        android:layout_gravity="center"
+        android:textColor="#fff"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="view faculty"
+        android:textSize="20dp"
+        android:background="@drawable/button_rounded"
+        android:layout_marginTop="10dp"
+        android:onClick="btn_view_faculty"
+        android:layout_gravity="center"
+        android:textColor="#fff"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="update faculty data"
+        android:textSize="20dp"
+        android:background="@drawable/button_rounded"
+        android:layout_marginTop="10dp"
+        android:onClick="btn_update_faculty"
+        android:layout_gravity="center"
+        android:textColor="#fff"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="Add student"
+        android:textSize="20dp"
+        android:background="@drawable/button_rounded"
+        android:layout_marginTop="50dp"
+        android:onClick="btn_add_student"
+        android:layout_gravity="center"
+        android:textColor="#fff"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="view student"
+        android:textSize="20dp"
+        android:background="@drawable/button_rounded"
+        android:layout_marginTop="10dp"
+        android:onClick="btn_view_student"
+        android:layout_gravity="center"
+        android:textColor="#fff"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="update student data"
+        android:textSize="20dp"
+        android:background="@drawable/button_rounded"
+        android:layout_marginTop="10dp"
+        android:onClick="btn_update_student"
+        android:layout_gravity="center"
+        android:textColor="#fff"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="Logout"
+        android:textSize="20dp"
+        android:background="@drawable/button_rounded"
+        android:layout_marginTop="100dp"
+        android:onClick="logout"
+        android:layout_gravity="center"
+        android:textColor="#fff"/>
+</LinearLayout>

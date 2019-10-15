@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
@@ -6,7 +7,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@color/cardview_light_background"
 android:orientation="vertical"
-    tools:context=".faculty_login">
+tools:context=".faculty_login">
 
 <Toolbar
     android:id="@+id/toolbar"
@@ -31,7 +32,7 @@ android:orientation="vertical"
 <EditText
     android:layout_width="350dp"
     android:layout_height="wrap_content"
-    android:hint="Faculty id"
+    android:hint="Admin Username"
     android:ems="10"
     android:inputType="number"
     android:textSize="20sp"
@@ -48,6 +49,7 @@ android:orientation="vertical"
     android:layout_marginTop="10dp"
     app:passwordToggleEnabled="true"
     android:textColorHint="@color/colorAccent"
+
     >
 </com.google.android.material.textfield.TextInputLayout>
 <EditText
@@ -71,15 +73,4 @@ android:orientation="vertical"
     android:layout_marginTop="20dp"
     android:layout_gravity="center"
     />
-    <Button
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:text="want to Register? click here"
-        android:textSize="20dp"
-        android:textColor="#ffff"
-        android:background="@drawable/button_rounded"
-        android:layout_marginTop="15dp"
-        android:layout_gravity="center"
-        android:onClick="btn_faculty_signup"/>
-
 </LinearLayout>

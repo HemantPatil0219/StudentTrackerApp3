@@ -22,4 +22,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),student_login.class));
 
     }
+
+    public void btn_admin(View view) {
+        startActivity(new Intent(getApplicationContext(),admin_login.class));
+    }
 }
