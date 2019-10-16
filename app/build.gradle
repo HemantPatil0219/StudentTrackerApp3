@@ -32,4 +32,5 @@ dependencies {
     implementation 'me.spark:submitbutton:1.0.1'
     implementation('com.journeyapps:zxing-android-embedded:3.6.0') { transitive = false }
     implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.google.android.gms:play-services-vision:17.0.2'
 }

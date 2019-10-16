@@ -11,9 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.google.zxing.BarcodeFormat;
-import com.google.zxing.MultiFormatWriter;
-import com.google.zxing.WriterException;
-import com.google.zxing.common.BitMatrix;
+
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 
 public class gen_qrcode extends AppCompatActivity {
@@ -49,4 +47,5 @@ private ImageView qr_code;
     public void btn_gen_qr(View view) {
         startActivity(new Intent(getApplicationContext(),gen_qrcode.class));
     }
+
 }

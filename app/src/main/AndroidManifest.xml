@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.studenttrackerapp">
+
+
     <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-feature android:name="android.hardware.Camera.focus"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:hardwareAccelerated="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".admin_main"></activity>
+        <activity android:name=".scan_qrcode"></activity>
+        <activity android:name=".admin_view_faculty" />
+        <activity android:name=".admin_view_student" />
+        <activity android:name=".admin_main" />
         <activity android:name=".admin_login" />
         <activity android:name=".Sign_up_faculty" />
         <activity android:name=".gen_qrcode" />

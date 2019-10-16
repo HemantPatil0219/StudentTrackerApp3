@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_view_faculty"
+    android:orientation="vertical">
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:title="View Faculty"
+        tools:targetApi="lollipop" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="50dp"
+        >
+    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Faculty Id"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="view"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:background="@drawable/button_rounded"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:onClick="btn_admin_view_faculty"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="update"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:background="@drawable/button_rounded"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:onClick="btn_admin_update_faculty"
+        />
+
+
+</LinearLayout>
